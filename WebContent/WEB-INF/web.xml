@@ -2,7 +2,12 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>BusHaNoi_Server</display-name>
   <welcome-file-list>
-    <welcome-file>Home.jsp</welcome-file>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
     <welcome-file>/axis2-web/index.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
@@ -31,25 +36,5 @@
   <servlet-mapping>
     <servlet-name>AxisAdminServlet</servlet-name>
     <url-pattern>/axis2-admin/*</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>AddSell</display-name>
-    <servlet-name>AddSell</servlet-name>
-    <servlet-class>controller.AddSell</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>AddSell</servlet-name>
-    <url-pattern>/AddSell</url-pattern>
-  </servlet-mapping>
-  <servlet>
-    <description></description>
-    <display-name>addsell</display-name>
-    <servlet-name>addsell</servlet-name>
-    <servlet-class>controller.addsell</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>addsell</servlet-name>
-    <url-pattern>/addsell</url-pattern>
   </servlet-mapping>
 </web-app>
